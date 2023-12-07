@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('https://i.ibb.co/bB1LnTH/Screenshot-20231122-184304-Instagram-Lite.jpg');
+            background-size: cover;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #messageInput {
+            width: 70%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        #uploadInput {
+            margin: 10px 0;
+        }
+
+        #submitBtn {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Chandrika's Page</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Dear Chandrika,</h1>
+        <p>You are the sunshine of my life, and every moment with you is a treasure.</p>
+        <p>Let's create beautiful memories together!</p>
+        
+        <h2>Send me a sweet message:</h2>
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button id="submitBtn" onclick="sendMessage()">Send</button>
+
+        <h2>Upload a special photo:</h2>
+        <input type="file" id="uploadInput" accept="image/*">
+
+        <br><br>
+
+        <p>With love,</p>
+        <p>Lohithaswa</p>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var message = document.getElementById('messageInput').value;
+            // Implement your logic for handling the message here
+            alert('Message sent: ' + message);
+        }
+    </script>
+</body>
+</html>
